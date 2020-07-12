@@ -26,7 +26,7 @@ export default class createExercise extends Component {
         if (response.data.length > 0) {
           this.setState({
             users: response.data.map((user) => user.username),
-            username: response.data[0].username,
+            // username: response.data[1].username,
           })
         }
       })
@@ -39,6 +39,7 @@ export default class createExercise extends Component {
     this.setState((p) => {
       return { ...p, [name]: value }
     })
+    console.log(this.state)
   }
   handleSubmit(e) {
     e.preventDefault()
