@@ -59,6 +59,7 @@ export default class createExercise extends Component {
         users: p.users,
       }
     })
+    window.location.reload()
   }
 
   render() {
